@@ -3,15 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3774f008-1eb5-4ba2-8d24-61004c82d70b" name="Default" comment="databaseHandler class and some edits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/controllers/Common/authscontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/controllers/Common/authscontroller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/controllers/userscontroller.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/controllers/userscontroller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/core/lib/defaults/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/packages/core/lib/defaults/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/sessions/sess_2q7peb1061l180ck6nltorsu0a" beforeDir="false" afterPath="$PROJECT_DIR$/packages/sessions/sess_2q7peb1061l180ck6nltorsu0a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/sessions/sess_i0qb3bhssauegnp3bbuf3frjho" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/uploads/images/168c71c49949f3ea3b1a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/uploads/images/3cb0323995f2d3cfaba2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/uploads/images/56123326a404012b0172.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/uploads/images/6ad12f51df9db4f73be6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/resources/uploads/images/983e0dfe0d4af4a0696b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/themes/piece/includes/assets/js/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/themes/piece/includes/assets/js/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/resources/themes/piece/views/settings/default.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/resources/themes/piece/views/settings/default.view.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -217,6 +213,7 @@
       <workItem from="1582990198777" duration="1001000" />
       <workItem from="1583569943267" duration="187000" />
       <workItem from="1583575331088" duration="932000" />
+      <workItem from="1583578265792" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="databaseHandler class and some edits">
       <created>1525269606151</created>

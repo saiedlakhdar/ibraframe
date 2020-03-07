@@ -28,6 +28,7 @@ class AuthsController
         '/auth/register',
         '/auth/logout',
         '/auth/accessdenied',
+        '/users/ajaxmethod',
         '/language/ar',
         '/language/en',
         '/myprofile/default',

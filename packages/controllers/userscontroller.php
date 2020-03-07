@@ -167,7 +167,7 @@ class UsersController extends AbstractController implements ActionInterface
 
     }
 
-    public function ajaxMethodAction()
+    public function ajaxmethodAction()
     {
         // no language needed
         // no view will rendering

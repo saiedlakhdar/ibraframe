@@ -38,7 +38,6 @@ $('#v-pills-tab a').click(function (evt) {
 }) ;
 
 
-
 // ajax functions
 
 function ajaxq(elm) {
