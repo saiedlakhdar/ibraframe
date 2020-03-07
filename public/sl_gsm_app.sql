@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 22, 2020 at 08:15 AM
+-- Generation Time: Mar 07, 2020 at 11:19 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -94,6 +94,29 @@ CREATE TABLE `devicetype` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `gender`
+--
+
+CREATE TABLE `gender` (
+  `id` tinyint(4) NOT NULL,
+  `gender` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `list_countries`
+--
+
+CREATE TABLE `list_countries` (
+  `id` int(11) NOT NULL,
+  `country_code` varchar(2) NOT NULL DEFAULT '',
+  `country_name` varchar(100) NOT NULL DEFAULT ''
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `mobiledetails`
 --
 
@@ -127,26 +150,6 @@ CREATE TABLE `permissions` (
   `scope` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `permissions`
---
-
-INSERT INTO `permissions` (`id`, `name`, `scope`) VALUES
-(1, 'Show users ', '/users/default'),
-(2, 'Add users', '/users/add'),
-(3, 'Edit users', '/users/edit'),
-(4, 'Delete users', '/users/del'),
-(5, 'Show permissions', '/permissions/default'),
-(6, 'Add permissions', '/permissions/add'),
-(7, 'Edit permissions', '/permissions/edit'),
-(8, 'Delete permissions', '/permissions/del'),
-(9, 'Show privileges', '/privileges/default'),
-(10, 'Add privileges', '/privileges/add'),
-(11, 'Edit privileges', '/privileges/edit'),
-(12, 'Delete privileges', '/privileges/del'),
-(17, 'Usersgroups', '/usersgroups/default'),
-(18, 'upload image', '/permissions/image');
-
 -- --------------------------------------------------------
 
 --
@@ -157,14 +160,6 @@ CREATE TABLE `privileges` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `privileges`
---
-
-INSERT INTO `privileges` (`id`, `name`) VALUES
-(2, 'Application manager '),
-(3, 'User');
 
 -- --------------------------------------------------------
 
@@ -178,29 +173,6 @@ CREATE TABLE `privileges_groups` (
   `permissionsid` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `privileges_groups`
---
-
-INSERT INTO `privileges_groups` (`id`, `privilegesid`, `permissionsid`) VALUES
-(1, 2, 1),
-(2, 2, 2),
-(3, 2, 3),
-(4, 2, 4),
-(5, 2, 5),
-(6, 2, 6),
-(7, 2, 7),
-(8, 2, 8),
-(9, 2, 9),
-(10, 2, 10),
-(11, 2, 11),
-(12, 2, 12),
-(13, 3, 1),
-(14, 3, 5),
-(22, 2, 17),
-(23, 2, 18),
-(24, 3, 18);
-
 -- --------------------------------------------------------
 
 --
@@ -211,21 +183,13 @@ CREATE TABLE `userprofile` (
   `userid` int(11) UNSIGNED NOT NULL,
   `firstname` varchar(50) DEFAULT NULL,
   `lastname` varchar(50) DEFAULT NULL,
-  `countery` varchar(50) DEFAULT NULL,
+  `country` varchar(50) DEFAULT NULL,
   `sex` varchar(6) DEFAULT NULL,
   `dateofbirth` datetime DEFAULT NULL,
   `picture` varchar(255) DEFAULT NULL,
   `bio` varchar(255) DEFAULT NULL,
   `regdate` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `userprofile`
---
-
-INSERT INTO `userprofile` (`userid`, `firstname`, `lastname`, `countery`, `sex`, `dateofbirth`, `picture`, `bio`, `regdate`) VALUES
-(1, 'lakhdar', 'saied', NULL, NULL, NULL, NULL, NULL, '2020-02-19 23:19:31'),
-(2, 'laoi', 'saied', NULL, NULL, NULL, NULL, NULL, '2020-02-20 00:10:41');
 
 -- --------------------------------------------------------
 
@@ -244,14 +208,6 @@ CREATE TABLE `users` (
   `token` varchar(255) NOT NULL,
   `lastlogin` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `username`, `email`, `password`, `rule`, `phone`, `status`, `token`, `lastlogin`) VALUES
-(1, 'saiedlakhdar', 'saied.lakhdar01@gmail.com', 'fe31023c46ace0974103aab52e3c39c0', 3, '+213697245950', 1, 'WrjpZy43CD1q6lRRHu1d24myLm6RKsPJvGiwENnUrLmTPB69WKiGII8mogO81vu5NTFtHAclYnUskpUCCj9gwQ==', '2020-02-20 22:26:16'),
-(2, 'saiedloai', 'loai@gamil.com', 'fe31023c46ace0974103aab52e3c39c0', 2, '0697245950', 1, 'bza8dJumYjyJKx6f/SylMZf6eH6N+lCxQuhiLyBAcyl9bVDIkg1TrXvdimC4SnHyVH7V55rnYKCHnDz0Yy7fsg==', '2020-02-22 07:30:55');
 
 --
 -- Indexes for dumped tables
@@ -294,6 +250,18 @@ ALTER TABLE `devicetype`
   ADD KEY `fk_pictureid_1` (`devicepicturesid`),
   ADD KEY `fk_osid_2` (`deviceosid`),
   ADD KEY `fk_detailid_3` (`devicedetailid`);
+
+--
+-- Indexes for table `gender`
+--
+ALTER TABLE `gender`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `list_countries`
+--
+ALTER TABLE `list_countries`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `mobiledetails`
@@ -379,6 +347,18 @@ ALTER TABLE `devicetype`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `gender`
+--
+ALTER TABLE `gender`
+  MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `list_countries`
+--
+ALTER TABLE `list_countries`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `mobiledetails`
 --
 ALTER TABLE `mobiledetails`
@@ -394,31 +374,31 @@ ALTER TABLE `mobilesubdetails`
 -- AUTO_INCREMENT for table `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `privileges`
 --
 ALTER TABLE `privileges`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `privileges_groups`
 --
 ALTER TABLE `privileges_groups`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `userprofile`
 --
 ALTER TABLE `userprofile`
-  MODIFY `userid` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `userid` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables

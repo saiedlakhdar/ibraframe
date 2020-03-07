@@ -1,8 +1,7 @@
 <?php
 
 function deleteFile($path){
-   if (file_exists($path)){
-       return unlink($path) ;
-   }
-
+    if (!is_dir($path) && file_exists($path)){
+        return unlink($path) ;
+    }
 } ;
