@@ -1,0 +1,13 @@
+{
+    "name": "ibralak",
+    "description": "The ibralak Framework.",
+    "keywords": ["framework", "ibralak"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php":">=7.0.0"
+    }
+    
+
+
+}

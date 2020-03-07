@@ -1,0 +1,12 @@
+{
+  "autoload": {
+    "psr-4": {
+      "App\\" : ""
+    },
+    "files" : [
+      "core/lib/defaults/consts.php",
+      "core/lib/defaults/functions.php"
+    ]
+
+  }
+}

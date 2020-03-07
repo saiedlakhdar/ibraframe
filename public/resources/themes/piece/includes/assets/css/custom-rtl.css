@@ -1,0 +1,216 @@
+/*------------------------------------------------------
+* Right to left css file 
+* Created by : saied loai lakhdar > DjefaNetwork
+* Github/saiedlakhdar
+-------------------------------------------------------*/
+.container-fluid{
+    direction: rtl !important;
+}
+#wrapper {
+    display: flex;
+    flex-direction: row-reverse !important;
+}
+
+/*================== navbar section ===================== */
+.navbar {
+    flex-direction: row-reverse !important;
+}
+
+.navbar-expand .navbar-nav {
+    flex-direction: inherit;
+    float: left !important;
+    margin-right: auto;
+    margin-left: unset !important;
+}
+
+.topbar .navbar-search > .input-group > input:focus, .topbar .navbar-search > .input-group > div > button:focus  {
+   box-shadow: none !important ;
+}
+
+.topbar .navbar-search > .input-group > input  {
+   direction: rtl;
+ }
+.topbar .navbar-search > .input-group > div > button {
+    border-radius: 50% 0 0 50% !important;
+    margin: auto;
+}
+
+
+#userDropdown { 
+    flex-direction: row-reverse !important;
+}
+
+#userDropdown > span { 
+    margin-right: 0 !important;
+    margin-left: 0.5rem ;
+}
+
+
+.navbar-nav >.nav-item > div  {
+    right: auto !important;
+    left: 0 !important;
+    direction: rtl;
+    text-align: right;
+  }
+.navbar-nav >.nav-item:nth-child(3) > div > a > .mr-3,
+.navbar-nav >.nav-item:nth-child(4) > div > a > .dropdown-list-image{
+    margin-right: 0 !important;
+    margin-left: 1rem !important;
+  }
+
+
+@media (min-width: 768px) {
+
+#wrapper  {
+    flex-direction: row-reverse !important;
+}
+.ml-md-3, .mx-md-3 {
+    margin-right: 1rem !important;
+}
+
+
+}
+
+/* =================== sidebar section ====================== */
+
+.sidebar-brand-icon{
+    transform: rotate(+15deg) !important;
+}
+.sidebar-brand-text{
+    margin-left: 1rem !important;
+    margin-left: 0 !important;
+
+}
+.sidebar {
+    min-height: 100vh;
+    display: flex;
+    direction: rtl;
+    padding-right: 0 !important;
+    z-index: 10;
+}
+
+.sidebar > .sidebar-heading{
+    text-align: right !important;
+}
+
+.sidebar > li > a{ text-align: right !important; }
+.sidebar > li > a::after{ float: left !important; }
+
+
+.sidebar .nav-item .nav-link[data-toggle="collapse"].collapsed::after {
+    content: '\f104' !important;
+
+}
+.sidebar.toggled .nav-item .nav-link {
+    text-align: center !important;
+}
+
+.sidebar.toggled > .sidebar-heading{
+    text-align: center !important;
+}
+
+.sidebar #sidebarToggle::after {
+    content: '\f105';
+}
+.sidebar.toggled #sidebarToggle::after {
+    content: '\f104';
+
+}
+
+.sidebar.toggled .nav-item .collapse {
+    right: calc(6.5rem + 1.5rem / 2) !important;
+}
+
+/*========================== Wrapper section ================================*/
+
+.container-fluid {
+    text-align-last: right;
+}
+
+/*========================== breadcrumb section ================================*/
+ nav >  .breadcrumb {
+    direction: rtl !important;
+ }
+.breadcrumb-item + .breadcrumb-item::before {
+    padding-right: unset !important;
+    padding-left: 0.5rem;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    font-family: "Font Awesome 5 Free";
+    content: "/" !important;
+}
+
+/*========================== alerts section ================================*/
+
+.alert-dismissible .close {
+    left: 0 !important;
+}
+
+.alert-dismissible {
+    padding-left: 4rem !important;
+    padding-right: 1rem !important;
+    
+}
+
+.alert {
+    direction: rtl !important;
+    display: flex !important;
+}
+/*========================== form section =====================================*/
+form{
+    direction: rtl !important;
+}
+form button{
+    text-align-last: center!important;
+}
+
+.card .card-header h6 a {
+    float: left !important;
+}
+
+/*========================== checkbox section =====================================*/
+/* The container */
+.container-checkbox {
+    padding-right: 35px !important;
+    padding-left: unset !important;
+}
+/* Create a custom checkbox */
+.container-checkbox .checkmark {
+    left: unset !important;
+    right: 0 !important;
+}
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+    left: unset !important;
+    right: 9px !important;
+}
+
+
+/*========================== Datatable section ================================*/
+
+#dataTable_wrapper > .row:first-child > div:first-child {
+    display: flex !important;
+}
+#dataTable_wrapper > .row:first-child > div:nth-child(2) {
+    direction: rtl !important;
+}
+table.dataTable {
+   direction: rtl !important;
+}
+
+
+
+
+/*========================== Footer section ================================*/
+
+footer > .container >div > span {
+direction: rtl;
+display: block;
+}
+
+
+/* Scroll to top button */
+.scroll-to-top {
+    left: 1rem;
+    right: unset !important;
+}

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3774f008-1eb5-4ba2-8d24-61004c82d70b" name="Default" comment="databaseHandler class and some edits" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/packages/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ibralite" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package_json" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpDebugGeneral" xdebug_show_addresses="true" break_at_first_line="true" hide_empty_superglobals="false" show_pre_config_in_web_page="false" />
+  <component name="PhpServers">
+    <servers>
+      <server host="www.ibralite.com" id="0f516c67-c502-4170-83f3-32d67f1ff6c5" name="ibrasite" use_path_mappings="true" />
+      <server host="ibralite.com" id="7cc34979-fba0-4c3d-b74d-624c864dd919" name="ibralite.com" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
+    <include_path>
+      <path value="$PROJECT_DIR$/packages/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1WLmIBuCft1zSLDsq35dQ9hi16t" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PhpCSValidationInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Constants" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/resources/languages/en/auth" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ibra\packages\core\lib\default" />
+      <recent name="C:\xampp\htdocs\ibra\packages\core\lib" />
+      <recent name="C:\xampp\htdocs\ibra\packages\library\abstracts" />
+      <recent name="C:\xampp\htdocs\ibra\packages\library\abstract" />
+      <recent name="C:\xampp\htdocs\ibra\packages\library" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ibra\public\resources\languages\en\auth" />
+      <recent name="C:\xampp\htdocs\ibra\public\resources\languages\ar\auth" />
+      <recent name="C:\xampp\htdocs\ibra\packages\models" />
+      <recent name="C:\xampp\htdocs\ibra\public\resources\languages\ar" />
+      <recent name="C:\xampp\htdocs\ibra\packages\controllers" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="1001">
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" nameIsGenerated="true" server_name="ibralite.com" start_url="http://ibralite.com/">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="ibrasite" start_url="http://ibralite.com/">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3774f008-1eb5-4ba2-8d24-61004c82d70b" name="Default" comment="" />
+      <created>1525218830957</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525218830957</updated>
+      <workItem from="1525218832361" duration="20000" />
+      <workItem from="1525219102975" duration="14638000" />
+      <workItem from="1525351353620" duration="5810000" />
+      <workItem from="1526004790771" duration="4676000" />
+      <workItem from="1526090387763" duration="3554000" />
+      <workItem from="1526094450170" duration="2182000" />
+      <workItem from="1526204630374" duration="390000" />
+      <workItem from="1526799370164" duration="25471000" />
+      <workItem from="1527105737382" duration="11135000" />
+      <workItem from="1527899803339" duration="8445000" />
+      <workItem from="1528166201993" duration="86450000" />
+      <workItem from="1578937168832" duration="31037000" />
+      <workItem from="1579098995091" duration="8181000" />
+      <workItem from="1579107360069" duration="809000" />
+      <workItem from="1579112844268" duration="48405000" />
+      <workItem from="1579349845079" duration="39964000" />
+      <workItem from="1579531948810" duration="5655000" />
+      <workItem from="1579545998703" duration="3909000" />
+      <workItem from="1579552091920" duration="17924000" />
+      <workItem from="1579628808937" duration="26400000" />
+      <workItem from="1579711754127" duration="1443000" />
+      <workItem from="1579723326221" duration="288000" />
+      <workItem from="1579733967880" duration="20327000" />
+      <workItem from="1579801916784" duration="16342000" />
+      <workItem from="1579884066829" duration="9342000" />
+      <workItem from="1580181093278" duration="609000" />
+      <workItem from="1580350429608" duration="10799000" />
+      <workItem from="1580437109033" duration="36099000" />
+      <workItem from="1580562538346" duration="1476000" />
+      <workItem from="1580584942472" duration="8338000" />
+      <workItem from="1580633774851" duration="22838000" />
+      <workItem from="1580811819784" duration="31499000" />
+      <workItem from="1580919616393" duration="2265000" />
+      <workItem from="1581459915545" duration="599000" />
+      <workItem from="1581514838290" duration="29299000" />
+      <workItem from="1581769979160" duration="597000" />
+      <workItem from="1581805356821" duration="599000" />
+      <workItem from="1581858441151" duration="9885000" />
+      <workItem from="1581903306779" duration="9134000" />
+      <workItem from="1581947647742" duration="22677000" />
+      <workItem from="1582055601993" duration="25203000" />
+      <workItem from="1582149852592" duration="7908000" />
+      <workItem from="1582164287734" duration="5428000" />
+      <workItem from="1582170958057" duration="607000" />
+      <workItem from="1582171578386" duration="11823000" />
+      <workItem from="1582233860129" duration="1221000" />
+      <workItem from="1582339602328" duration="9518000" />
+      <workItem from="1582440542528" duration="1075000" />
+      <workItem from="1582463560858" duration="26140000" />
+      <workItem from="1582693575613" duration="739000" />
+      <workItem from="1582694328352" duration="3147000" />
+      <workItem from="1582781266561" duration="7577000" />
+      <workItem from="1582797486365" duration="11000" />
+      <workItem from="1582798800173" duration="20723000" />
+      <workItem from="1582885233227" duration="38058000" />
+      <workItem from="1582983952690" duration="2530000" />
+      <workItem from="1582990198777" duration="1001000" />
+      <workItem from="1583569943267" duration="187000" />
+    </task>
+    <task id="LOCAL-00001" summary="databaseHandler class and some edits">
+      <created>1525269606151</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1525269606151</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/.idea" />
+    </ignored-roots>
+    <MESSAGE value="databaseHandler class and some edits" />
+    <option name="LAST_COMMIT_MESSAGE" value="databaseHandler class and some edits" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PhpWebAppRunConfigurationType">
+        <watch expression="$this::dsn::dsn::dsn::dsn::dsn::dsn::dsn" />
+        <watch expression="$this::dsn::dsn::dsn::dsn::dsn::dsn::dsn" />
+        <watch expression="$this::dsn::dsn::dsn::dsn::dsn::dsn::dsn::dsn::dsn::dsn::dsn::dsn::dsn::dsn" />
+        <watch expression="$_COOKIE" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

@@ -1,0 +1,260 @@
+/*--------------------------------------------------
+* custom alerts sectios
+----------------------------------------------------*/
+/*------------------- Setting container  ------------*/
+.setting-container{
+    background: rgba(234, 234, 234, 0.39);
+    margin: auto;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;;
+}
+.setting-container .input-group:first-child{
+    background: rgb(234, 236, 244);
+    margin-left: inherit;
+}
+.setting-container .input-group #v-pills-tab{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+.setting-container .input-group #v-pills-tabContent{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    width: inherit;
+}
+.setting-container .input-group #v-pills-tabContent img{
+    border:3px solid rgb(217, 218, 218);
+    width: 200px;
+    height: 200px;
+}
+.setting-container .input-group #v-pills-tabContent i{
+    position: absolute;
+    border:3px solid rgba(0, 104, 255, 0.25);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    left: 53%;
+    top: 75%;
+    border-radius: 50%;
+    display: none;
+}
+
+.setting-container .input-group #v-pills-tabContent img:hover{
+    border: 3px solid rgba(0, 104, 255, 0.25);
+}
+
+
+
+
+/*------------------- Text colors -------------------*/
+.text-black {
+    color: #000000 !important ;
+}
+
+
+/*------------------- Scroll bar -------------------*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    direction: rtl;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4e73df;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0022b3;
+}
+
+/*------------------- Alert bar -------------------*/
+
+/*success*/
+.alert1{
+    color: #ffffff ;
+    background-color: #4DAF7C;
+    border-radius: 0;
+}
+
+/*worning*/
+.alert2{
+    color: #ffffff;
+    background-color: #E29C45;
+    border-radius: 0;
+}
+
+/*dunger */
+.alert3{
+    color: #ffffff;
+    background-color: #F22613;
+    border-radius: 0;
+}
+
+/*primary*/
+.alert4{
+    color: #ffffff;
+    background-color: #496edb;
+    border-radius: 0;
+}
+
+/*notice*/
+.alert5{
+    color: #ffffff;
+    background-color: #6C7A89;
+    border-radius: 0;
+}
+
+/*------------------- From section -------------------*/
+.card .card-header h6 a {
+    float: right !important;
+}
+
+.form-control {
+    color: #000000 !important;
+}
+#input-file{
+    display: none;
+}
+/*------------------- pagination link -------------------*/
+
+.page-item.active .page-link {
+    z-index: 0!important;
+}
+
+
+/*------------------- ِِ Custom checkbox & radiobox -------------------*/
+
+/* The container */
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /*margin-bottom: 12px;*/
+    cursor: pointer;
+    /*font-size: 22px;*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.container-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.container-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* The container */
+.container-radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.container-radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container-radio input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.container-radio .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container-radio .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
